@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style3.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>My Favorite Movies</h1>
+      </div>
+      <div class="form">
+        <form action="">
+          <input type="text" class="inputName" placeholder="name" />
+          <input type="number" class="inputRate" placeholder="rate" />
+          <button type="button" class="add">add</button>
+          <!-- <button type="button" class="edit">edit</button> -->
+        </form>
+      </div>
+      <div class="movie-list">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                name
+                <svg
+                  class="sortName"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-double-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </th>
+              <th>
+                rate
+                <svg
+                  class="sortRate"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-double-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td>ss</td>
+              <td>vcd</td>
+              <td id="s" class="btn-delete delete">Delete</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="main3.js"></script>
+  </body>
+</html>

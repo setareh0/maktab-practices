@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="title">
+          <h1>رستوران مک دونالد شعبه تهران</h1>
+        </div>
+        <div class="cards" id="menuItems">
+          <!--    injaa-->
+        </div>
+        <div class="back"></div>
+      </div>
+      <div class="payment-card">
+        <div class="total-orders">
+          <p>جمع کل سفارشات:</p>
+          <p class="total-orders-price" id="total-orders-price">0 تومان</p>
+        </div>
+        <div class="fee">
+          <p>حق سرویس و کارمزد:</p>
+          <p id="fee-price">0 تومان</p>
+        </div>
+        <div class="discount">
+          <p>تخفیف:</p>
+          <p id="discountPercent" class="discount-percent">0 درصد</p>
+        </div>
+        <div class="dis-input">
+          <input id="discount-input" type="text" placeholder="کد تخفیف" />
+          <button id="discount-btn" type="submit">
+            <i class="fa fa-check"></i>
+          </button>
+        </div>
+        <div class="total-price">
+          <p>مبلغ قابل پرداخت:</p>
+          <p class="total-price-payment" id="total-price-payment">0 تومان</p>
+        </div>
+        <div class="add">
+          <button class="submit" id="submit" type="submit">ثبت سفارش</button>
+        </div>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <p>سفارش شما با موفقیت ثبت شد.</p>
+          <button class="submit-btn" id="submit-btn">باشه</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

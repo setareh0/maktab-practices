@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer">
+        <h1 class="title">Timer</h1>
+        <h2 class="time">00:00:00</h2>
+      </div>
+      <div class="buttons">
+        <button class="cancel" type="submit">Cancel</button>
+        <button class="start" type="submit">Start</button>
+      </div>
+      <div class="list">
+        <select class="list-select">
+          <option selected>Choose...</option>
+          <option data-s="second">1 s</option>
+          <option data-s="second">10 s</option>
+          <option data-s="second">20 s</option>
+          <option data-m="minute">1 m</option>
+          <option data-m="minute">10 m</option>
+          <option data-m="minute">20 m</option>
+          <option data-h="hour">1 h</option>
+          <option data-h="hour">5 h</option>
+          <option data-custom="custom">Custom</option>
+        </select>
+        <span class="icon">
+          <i class="fa">&#xf028;</i>
+          <audio id="alarmSound" src="./sound.mp3"></audio>
+        </span>
+      </div>
+      <div class="custom">
+        <!-- <label for="custom">Minute:</label>
+        <input class="customInput" type="number" />
+        <button class="sub" type="submit">Submit</button> -->
+      </div>
+    </div>
+    <script src="main1.js"></script>
+  </body>
+</html>

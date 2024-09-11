@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Tailwind Project</title>
+  </head>
+  <body class="w-full font-Circular">
+    <div
+      class="w-full max-w-[1400px] h-[45px] fixed top-0 right-0 left-0 z-20 bg-white m-auto"
+    >
+      <div
+        class="absolute flex justify-between items-center p-6 pt-8 pb-4 w-full z-20 bg-white top-0 lg:px-24 lg:pt-6"
+      >
+        <div class="menu hidden sm:max-md:block">
+          <img src="./assets/images/Vector.svg" alt="bars-icon" />
+        </div>
+        <div class="logo flex items-center gap-4">
+          <img src="./assets/images/Vector.png" alt="logo" />
+          <h2 class="text-2xl font-bold">Travlog</h2>
+        </div>
+        <div class="menu sm:hidden">
+          <img src="./assets/images/Vector.svg" alt="bars-icon" />
+          <!-- <div class="menu-icon text bg-indigo-600 text-white rounded-xl py-1 p-[10px]">
+        <i class="fa fa-bars text-2xl font-thin"></i> -->
+        </div>
+        <div class="hidden md:block">
+          <ul class="flex gap-14">
+            <li>
+              <a class="text-sm font-bold text-[#222831]" href="#">Home</a>
+            </li>
+            <li>
+              <a class="text-sm font-bold text-[#19182580]" href="#"
+                >Discover</a
+              >
+            </li>
+            <li>
+              <a class="text-sm font-bold text-[#19182580]" href="#"
+                >Special Deals</a
+              >
+            </li>
+            <li>
+              <a class="text-sm font-bold text-[#19182580]" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden sm:flex sm:gap-4 sm:items-center">
+          <a class="text-sm font-bold text-[#222831]" href="#">Log In</a>
+          <a
+            class="bg-purple text-sm font-medium text-white rounded-3xl py-[10px] px-6"
+            href="#"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-5 md:p-0 max-w-[1400px] m-auto">
+      <div class="flex justify-center w-full h-96 mb-[105px] mt-12 md:hidden">
+        <div class="back-img relative">
+          <img
+            class="w-[479px] h-[300px]"
+            src="./assets/images/layer.svg"
+            alt=""
+          />
+          <div class="flex gap-4 absolute top-[6.8rem] left-16 w-[300px]">
+            <!-- margin: auto;
+           width: 100%;
+           max-width: 500px;
+           display: flex;
+            justify-content: center; -->
+            <div class="">
+              <img
+                class="mb-4"
+                src="./assets/images/Rectangle 1.png"
+                alt="img1"
+              />
+              <img src="./assets/images/Rectangle 2.png" alt="img2" />
+            </div>
+            <div class="flex items-center">
+              <img
+                class="relative top-[10px]"
+                src="./assets/images/Rectangle 3.png"
+                alt="take-picture"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-[#F85E9F] z-10 absolute p-[10px] rounded-full left-12 top-60 shadow-[rgba(0,0,15,0.2)_1px_12px_13px_-3px]"
+          >
+            <img src="./assets/images/cVector.png" alt="telegram" />
+          </div>
+          <div
+            class="bg-[#FF5722] z-10 absolute p-3 rounded-full left-64 top-[26rem] shadow-[rgba(0,0,15,0.2)_1px_12px_13px_-3px]"
+          >
+            <img src="./assets/images/Vector (1).png" alt="user" />
+          </div>
+          <div
+            class="flex items-center bg-white absolute left-80 top-80 px-[20px] py-[10px] rounded-l-2xl shadow-[rgba(0,0,15,0.2)_1px_20px_46px_-9px]"
+          >
+            <img
+              class="w-[20px] h-[18px]"
+              src="./assets/images/Vectorm.svg"
+              alt="location"
+            />
+            <p class="ml-[6px] text-[11px] font-bold">Top Places</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-20">
+        <div
+          class="m-auto text-center md:mt-[100px] md:pl-10 md:text-start lg:w-[35%]"
+        >
+          <div class="flex justify-center md:justify-start">
+            <div
+              class="flex justify-center items-center w-56 h-14 gap-4 shadow-[rgba(0,0,15,0.2)_0px_35px_64px_-18px] rounded-full"
+            >
+              <h3 class="text-sm text-pink font-bold">Explore the world!</h3>
+              <img
+                class="w-[20px] h-[18px]"
+                src="./assets/images/1Vector.svg"
+                alt="bag"
+              />
+            </div>
+          </div>
+          <h2
+            class="text-[40px] font-Circular font-bold mt-6 leading-[48px] px-[88px] sm:px-[110px] sm:mt-11 md:px-0"
+          >
+            Travel
+            <span class="text-pink">top destination</span>
+            of the world
+          </h2>
+          <p
+            class="text-gray font-Inter text-base mt-8 px-9 sm:px-[130px] sm:pb-2 md:px-0"
+          >
+            We always make our customer happy by providing as many choices as
+            possible
+          </p>
+          <div
+            class="flex flex-col sm:flex-row sm:gap-4 sm:justify-center sm:mb-4"
+          >
+            <button
+              class="rounded-full bg-purple w-full text-grayLight py-6 mt-9 sm:mt-7 text-sm font-bold font-CircularStd shadow-[rgba(0,0,15,0.2)_0px_32px_55px_-10px] sm:px-[20px] sm:py-[10px] sm:w-36 sm:h-[50px]"
+            >
+              Get Started
+            </button>
+            <button
+              class="flex justify-center items-center gap-2 bg-white rounded-full w-full py-6 mt-7 border border-grayLight text-[#222831] text-sm font-bold font-CircularStd z-10 relative sm:pl-[30px] sm:pr-[32px] sm:py-[15px] sm:w-44 sm"
+            >
+              <img src="./assets/images/2Vector.svg" alt="" />
+              Watch Demo
+            </button>
+          </div>
+        </div>
+        <div
+          class="justify-center w-full h-96 mb-[105px] hidden md:flex lg:w-1/2"
+        >
+          <div class="back-img relative w-full">
+            <img
+              class="w-[479px] h-[300px]"
+              src="./assets/images/layer.svg"
+              alt=""
+            />
+            <div class="flex gap-4 absolute top-[6.8rem] left-16 w-[300px]">
+              <div class="">
+                <img
+                  class="mb-4"
+                  src="./assets/images/Rectangle 1.png"
+                  alt="img1"
+                />
+                <img src="./assets/images/Rectangle 2.png" alt="img2" />
+              </div>
+              <div class="flex items-center">
+                <img
+                  class="relative top-[10px]"
+                  src="./assets/images/Rectangle 3.png"
+                  alt="take-picture"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-[#F85E9F] z-10 absolute p-[10px] rounded-full left-12 top-60 shadow-[rgba(0,0,15,0.2)_1px_12px_13px_-3px]"
+            >
+              <img src="./assets/images/cVector.png" alt="telegram" />
+            </div>
+            <div
+              class="bg-[#FF5722] z-10 absolute p-3 rounded-full left-64 top-[26rem] shadow-[rgba(0,0,15,0.2)_1px_12px_13px_-3px]"
+            >
+              <img src="./assets/images/Vector (1).png" alt="user" />
+            </div>
+            <div
+              class="flex items-center bg-white absolute left-80 top-80 px-[20px] py-[10px] rounded-l-2xl shadow-[rgba(0,0,15,0.2)_1px_20px_46px_-9px]"
+            >
+              <img
+                class="w-[20px] h-[18px]"
+                src="./assets/images/Vectorm.svg"
+                alt="location"
+              />
+              <p class="ml-[6px] text-[11px] font-bold">Top Places</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        class="hidden md:block w-[50px] relative bottom-[105px] md:bottom-0 md:top-4 md:left-6 lg:left-14"
+        src="./assets/images/aOBJECTS.svg"
+        alt=""
+      />
+
+      <!-- <div>
+        <img src="./assets/images/aOBJECTS.svg" alt="" />
+      </div> -->
+      <div class="flex justify-center w-full mb-[80px] mt-24 md:mt-0">
+        <div
+          class="flex flex-wrap justify-center w-[74%] gap-8 items-center lg:w-full md:gap-14 lg:gap-24"
+        >
+          <img src="./assets/images/Group.svg" alt="brand" />
+          <img src="./assets/images/Group 2.svg" alt="brand" />
+          <img src="./assets/images/Group (1).svg" alt="brand" />
+          <img src="./assets/images/33Vector.svg" alt="brand" />
+          <img src="./assets/images/Group 3.svg" alt="brand" />
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center mb-16">
+        <div
+          class="md:w-1/2 w-full flex flex-col items-center mt-8 md:mt-16 md:items-start md:pl-8 lg:w-[60%] lg:pl-[6rem] xl:pl-[9rem]"
+        >
+          <h4 class="text-pink font-bold font-CircularStd text-base mb-5">
+            SERVICES
+          </h4>
+          <h2
+            class="text-center text-[32px] font-bold px-1 text-dark md:text-start md:pr-12 md:pl-0 lg:w-[80%]"
+          >
+            Our top value categories for you
+          </h2>
+        </div>
+
+        <div
+          class="md:w-1/2 lg:w-full grid grid-cols-1 w-full sm:grid-cols-3 sm:gap-4 sm:mt-8 md:overflow-x-auto md:flex md:flex-nowrap"
+        >
+          <div
+            class="flex flex-shrink-0 w-full sm:w-56 md:w-60 flex-col items-center border border-grayLight rounded-3xl p-8 mt-9 sm:mt-6 hover:shadow-[rgb(0,0,0,0.14)_0_28px_62px_-11px] hover:border-0"
+          >
+            <img src="./assets/images/destination 1.png" alt="destination" />
+            <h3
+              class="font-bold my-6 text-dark text-[24px] font-CircularStd text-center"
+            >
+              Best Tour Guide
+            </h3>
+            <p
+              class="text-center text-grayDark text-[18px] font-Inter px-5 sm:px-0"
+            >
+              What looked like a small patch of purple grass, above five feet.
+            </p>
+          </div>
+          <div
+            class="flex flex-shrink-0 w-full sm:w-56 md:w-60 flex-col items-center border border-grayLight rounded-3xl p-8 mt-6 hover:shadow-[rgb(0,0,0,0.14)_0_28px_62px_-11px] hover:border-0"
+          >
+            <img src="./assets/images/booking 1.png" alt="destination" />
+            <h3
+              class="font-bold my-6 text-dark text-[24px] font-CircularStd text-center"
+            >
+              Easy Booking
+            </h3>
+            <p
+              class="text-center text-grayDark text-[18px] font-Inter px-5 sm:px-0"
+            >
+              Square, was moving across the sand in their direction.
+            </p>
+          </div>
+          <div
+            class="flex flex-shrink-0 w-full sm:w-56 md:w-60 flex-col items-center border border-grayLight rounded-3xl p-8 mt-6 hover:shadow-[rgb(0,0,0,0.14)_0_28px_62px_-11px] hover:border-0"
+          >
+            <img src="./assets/images/cloudy 1.png" alt="destination" />
+            <h3
+              class="font-bold my-6 text-dark text-[24px] font-CircularStd text-center"
+            >
+              Weather Forecast
+            </h3>
+            <p
+              class="text-center text-grayDark text-[18px] font-Inter px-5 sm:px-0"
+            >
+              What looked like a small patch of purple grass, above five feet.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:flex md:justify-between md:mb-4 md:px-8 lg:px-36">
+        <div class="mt-24 flex flex-col items-center md:items-start">
+          <h4
+            class="text-pink text-base font-bold font-CircularStd tracking-[4px]"
+          >
+            TOP DESTINATION
+          </h4>
+          <h4 class="text-[32px] font-bold font-CircularStd mt-2">
+            Explore top destination
+          </h4>
+        </div>
+        <div
+          class="flex justify-between items-center mt-9 sm:justify-center sm:gap-6 sm:mb-4 sm:mt-10"
+        >
+          <a class="bg-white p-6 rounded-full border border-grayLight" href="#">
+            <img src="./assets/images/arrow-left 1.svg" alt="arrow-left" />
+          </a>
+          <a
+            class="bg-purple p-6 rounded-full shadow-[rgba(0,0,15,0.2)_1px_20px_27px_-3px]"
+            href="#"
+          >
+            <img src="./assets/images/arrow-left 2.svg" alt="arrow-left" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-3 sm:gap-6 md:px-[25px] lg:px-[10%] lg:gap-12 justify-center w-[75%] m-auto sm:w-full"
+      >
+        <div
+          class="mt-8 bg-white shadow-[rgba(0,0,15,0.1)_0px_34px_48px_-11px] rounded-3xl"
+        >
+          <img
+            class="w-full h-[213px]"
+            src="./assets/images/Rectangle 6.png"
+            alt="beach"
+          />
+          <div class="px-6 py-7">
+            <div class="md:flex md:justify-between md:gap-4">
+              <span
+                class="text-[23px] font-CircularStd font-bold text-pink md:order-2"
+                >$550.16</span
+              >
+              <h4
+                class="text-[23px] font-CircularStd font-bold text-dark sm:max-md:truncate md:order-1"
+              >
+                Paradise Beach, Bantayan Island
+              </h4>
+            </div>
+            <p class="text-[18px] font-Inter text-grayDarker mt-3 mb-6">
+              Rome, Italy
+            </p>
+            <span
+              class="flex items-center gap-3 text-orange text-[23px] font-bold font-CircularStd"
+              >4.8
+              <img src="./assets/images/4Vector.svg" alt="star" />
+            </span>
+          </div>
+        </div>
+        <div
+          class="mt-8 bg-white shadow-[rgba(0,0,15,0.1)_0px_34px_48px_-11px] rounded-3xl"
+        >
+          <img
+            class="w-full h-[213px]"
+            src="./assets/images/۲Rectangle 6.png"
+            alt="beach"
+          />
+          <div class="px-6 py-7">
+            <div class="md:flex md:justify-between md:gap-4">
+              <span
+                class="text-[23px] font-CircularStd font-bold text-pink md:order-2"
+                >$20.99</span
+              >
+              <h4
+                class="text-[23px] font-CircularStd font-bold text-dark sm:max-md:truncate md:order-1"
+              >
+                Ocean with full of Colors
+              </h4>
+            </div>
+            <p class="text-[18px] font-Inter text-grayDarker mt-3 mb-6">
+              Maldives
+            </p>
+            <span
+              class="flex items-center gap-3 text-orange text-[23px] font-bold font-CircularStd"
+              >4.5
+              <img src="./assets/images/4Vector.svg" alt="star" />
+            </span>
+          </div>
+        </div>
+        <div
+          class="mt-8 bg-white shadow-[rgba(0,0,15,0.1)_0px_34px_48px_-11px] rounded-3xl"
+        >
+          <img
+            class="w-full h-[213px]"
+            src="./assets/images/Rectangle 6 (1).png"
+            alt="beach"
+          />
+          <div class="px-6 py-7">
+            <div class="md:flex md:justify-between md:gap-4">
+              <span
+                class="text-[23px] font-CircularStd font-bold text-pink md:order-2"
+                >$150.99</span
+              >
+              <h4
+                class="text-[23px] font-CircularStd font-bold text-dark sm:max-md:truncate md:order-1"
+              >
+                Mountain View, Above the cloud
+              </h4>
+            </div>
+            <p class="text-[18px] font-Inter text-grayDarker mt-3 mb-6">
+              United Arab Emeries
+            </p>
+            <span
+              class="flex items-center gap-3 text-orange text-[23px] font-bold font-CircularStd"
+              >5.0
+              <img src="./assets/images/4Vector.svg" alt="star" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="md:flex md:justify-center md:mt-16 items-center">
+        <div
+          class="mt-12 flex justify-center md:relative md:right-16 md:w-[65%] md:justify-start"
+        >
+          <img
+            class="w-[398px] h-[318.49px] sm:w-[550px] sm:h-[400px] md:h-[600px] md:w-full lg:relative lg:left-16"
+            src="./assets/images/Group 9238.png"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col items-center mt-16 md:items-start md:w-[45%]">
+          <h4 class="text-pink text-base font-bold tracking-[4px]">
+            TRAVEL POINT
+          </h4>
+          <p
+            class="text-[32px] font-bold text-center mt-3 md:text-start md:pr-[8rem]"
+          >
+            We helping you find your dream location
+          </p>
+          <span
+            class="text-base font-Inter text-center text-gray mt-7 md:text-start md:pr-[7rem] md:mt-5"
+            >Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45
+            BC.</span
+          >
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 w-full md:w-[92%] sm:gap-4 sm:mt-8 md:mt-0 lg:w-[71%] lg:gap-x-3 md:gap-x-0"
+          >
+            <div
+              class="flex flex-col items-center justify-center mt-8 border border-[#1918251A] p-8 rounded-[32px] h-[135px] md:w-[142px] md:h-[120px] lg:w-[160px] lg:h-[135px] sm:p-4 md:p-0"
+            >
+              <h4 class="text-orange text-[35px] font-bold md:text-[25px]">
+                500+
+              </h4>
+              <p
+                class="text-[rgba(25, 24, 37, 1)] text-[18px] my-2 font-Inter md:text-[15px]"
+              >
+                Holiday Package
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center mt-4 border border-[#1918251A] p-8 rounded-[32px] h-[135px] sm:mt-8 md:w-[142px] md:h-[120px] lg:w-[160px] lg:h-[135px] sm:p-4 md:p-0"
+            >
+              <h4 class="text-orange text-[35px] font-bold md:text-[25px]">
+                100
+              </h4>
+              <p
+                class="text-[rgba(25, 24, 37, 1)] text-[18px] my-2 font-Inter md:text-[15px]"
+              >
+                Luxury Hotel
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center mt-4 border border-[#1918251A] p-8 rounded-[32px] h-[135px] md:w-[142px] md:h-[120px] lg:w-[160px] lg:h-[135px] sm:p-4 md:p-0"
+            >
+              <h4 class="text-orange text-[35px] font-bold md:text-[25px]">
+                7
+              </h4>
+              <p
+                class="text-[rgba(25, 24, 37, 1)] text-[18px] my-2 font-Inter md:text-[15px]"
+              >
+                Premium Airlines
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center mt-4 border border-[#1918251A] p-8 rounded-[32px] h-[135px] md:w-[142px] md:h-[120px] lg:w-[160px] lg:h-[135px] sm:p-4 md:p-0"
+            >
+              <h4 class="text-orange text-[35px] font-bold md:text-[25px]">
+                2k+
+              </h4>
+              <p
+                class="text-[rgba(25, 24, 37, 1)] text-[18px] my-2 font-Inter md:text-[15px]"
+              >
+                Happy Customer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:flex">
+        <div class="flex justify-center mt-16 md:hidden">
+          <img class="w-[60%] sm:max-md:w-[67%]" src="./assets/images/BACKGROUND.png" alt="" />
+        </div>
+        <div class="md:w-[60%] md:pl-8 lg:pl-36">
+          <div class="flex flex-col items-center mt-12 md:items-start">
+            <h4 class="text-pink text-base font-bold tracking-[4px]">
+              KEY FEATURES
+            </h4>
+            <p class="text-[32px] font-bold text-center mt-3">
+              We offer best services
+            </p>
+            <span
+              class="text-base font-Inter text-center text-gray mt-[28px] px-7 md:text-start md:pl-0 md-pr-12"
+            >
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC.
+            </span>
+          </div>
+          <div class="flex flex-col items-center md:w-[400px] md:ml-6">
+            <div
+              class="flex flex-col w-[334px] h-[290px] p-8 mt-10 sm:h-[150px] sm:gap-6 sm:flex-row sm:w-full sm:items-center md:py-0 md:px-4 md:h-[115px] md:items-start"
+            >
+              <div
+                class="bg-orange w-[80px] pl-[24px] pr-[20px] py-[25px] rounded-3xl sm:h-[78px] sm:w-[75px] sm:pl-[22px] sm:pb-[50px] sm:pt-[23px] md:relative md:top-[18px] md:h-[65px] md:w-[70px] md:pl-[20px] md:pt-[18px]"
+              >
+                <img
+                  class="w-8 h-8"
+                  src="./assets/images/5Vector.svg"
+                  alt="location"
+                />
+              </div>
+              <div>
+                <h4 class="text-[23px] font-bold font-Circular mt-4">
+                  We offer best services
+                </h4>
+                <p
+                  class="text-lg text-[#19182580] font-Inter pr-14 mt-2 md:pr-0 md:mt-0"
+                >
+                  Lorem Ipsum is not simply random text
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col w-[334px] h-[290px] mt-5 border border-grayLight p-8 rounded-3xl sm:h-[150px] sm:gap-6 sm:flex-row sm:w-full sm:items-center md:py-0 md:px-4 md:h-[115px] md:items-start"
+            >
+              <div
+                class="bg-yellow w-[80px] pl-[24px] pr-[20px] py-[25px] rounded-3xl sm:h-[78px] sm:w-[75px] sm:pl-[22px] sm:pb-[50px] sm:pt-[23px] md:relative md:top-[18px] md:h-[65px] md:w-[70px] md:pl-[20px] md:pt-[18px]"
+              >
+                <img
+                  class="w-8 h-8"
+                  src="./assets/images/7Vector.svg"
+                  alt="location"
+                />
+              </div>
+              <div>
+                <h4 class="text-[23px] font-bold font-Circular mt-4">
+                  Schedule your trip
+                </h4>
+                <p
+                  class="text-lg text-[#19182580] font-Inter pr-16 mt-2 md:pr-0 md:mt-0"
+                >
+                  It has roots in a piece of classical
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col w-[334px] h-[290px] mt-5 p-8 sm:gap-6 sm:flex-row sm:w-full sm:items-center sm:h-[150px] sm:mb-16 md:py-0 md:px-4 md:h-[115px] md:items-start"
+            >
+              <div
+                class="bg-pink w-[80px] pl-[24px] pr-[20px] py-[25px] rounded-3xl sm:h-[78px] sm:w-[75px] sm:pl-[22px] sm:pb-[50px] sm:pt-[23px] md:relative md:top-[18px] md:h-[65px] md:w-[70px] md:pl-[20px] md:pt-[18px]"
+              >
+                <img
+                  class="w-8 h-8"
+                  src="./assets/images/8Vector.svg"
+                  alt="location"
+                />
+              </div>
+              <div>
+                <h4 class="text-[23px] font-bold font-Circular mt-4">
+                  Get discounted coupons
+                </h4>
+                <p
+                  class="text-lg text-[#19182580] font-Inter pr-10 mt-2 md:pr-0 md:mt-0"
+                >
+                  Lorem Ipsum is not simply random text
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="justify-center mt-16 hidden md:flex md:w-[40%]">
+          <img
+            class="md:h-[500px] lg:h-[550px]"
+            src="./assets/images/BACKGROUND.png"
+            alt="photo"
+          />
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center mt-16 md:mt-12 lg:mt-24">
+        <h4 class="text-pink text-base font-bold tracking-[4px] font-Circular">
+          TESTIMONIALS
+        </h4>
+        <p
+          class="text-[32px] font-bold text-center mt-3 font-Circular text-dark"
+        >
+          Trust our clients
+        </p>
+      </div>
+      <div class="relative flex flex-col items-center mt-14">
+        <img src="./assets/images/Ellipse 22.png" alt="person" />
+        <h5 class="text-[23px] font-bold font-Circular text-[#191825BF] mt-14">
+          <span class="text-[28px] text-orange">Mark Smith</span>
+          / Travel Enthusiast
+        </h5>
+        <div class="flex gap-4 mt-8">
+          <img class="w-[27px]" src="./assets/images/star 2.svg" alt="star" />
+          <img class="w-[27px]" src="./assets/images/star 2.svg" alt="star" />
+          <img class="w-[27px]" src="./assets/images/star 2.svg" alt="star" />
+          <img class="w-[27px]" src="./assets/images/star 2.svg" alt="star" />
+          <img class="w-[27px]" src="./assets/images/star 2.svg" alt="star" />
+        </div>
+        <p
+          class="mt-14 font-Circular text-lg font-[450] text-[#191825BF] text-center sm:px-16 sm:w-[80%] md:w-[60%] lg:w-[55%]"
+        >
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC.
+        </p>
+        <div class="flex gap-6 mt-16">
+          <div class="w-6 h-6 rounded-full bg-[#1918250D]"></div>
+          <div class="w-6 h-6 rounded-full bg-pink"></div>
+          <div class="w-6 h-6 rounded-full bg-[#1918250D]"></div>
+        </div>
+        <div
+          class="flex justify-between items-center mt-16 w-full sm:absolute sm:px-8 sm:mt-[10rem] z-10"
+        >
+          <a class="bg-white p-6 rounded-full border border-grayLight" href="#">
+            <img src="./assets/images/arrow-left 1.svg" alt="arrow-left" />
+          </a>
+          <a
+            class="bg-purple p-6 rounded-full shadow-[rgba(0,0,15,0.2)_1px_20px_27px_-3px]"
+            href="#"
+          >
+            <img src="./assets/images/arrow-left 2.svg" alt="arrow-left" />
+          </a>
+        </div>
+
+        <div
+          class="back sm:absolute top-[-235px] md:top-[-240px] lg:top-[-420px] lg:right-0"
+        >
+          <img
+            class="hidden sm:block opacity-20 lg:w-[1600px]"
+            src="./assets/images/BVector.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <img
+        class="w-[140px] h-[176px] relative top-[60px] left-11 hidden sm:block"
+        src="./assets/images/Graphic_Elements.svg"
+        alt="shape"
+      />
+      <div class="mt-[100px] flex flex-col items-center sm:mt-[55px]">
+        <h4
+          class="text-base text-pink font-bold font-Circular tracking-[2px] leading-[19.2px] text-center px-16"
+        >
+          SUBSCRIBE TO OUR NEWSLETTER
+        </h4>
+        <p
+          class="mt-8 sm:px-12 text-[32px] font-bold text-center text-dark leading-[46px] font-Circular w-[64%] md:w-[67%] lg:w-[46%]"
+        >
+          Prepare yourself & let’s explore the beauty of the world
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center mt-8 sm:flex-row sm:justify-around sm:mb-[160px] sm:mt-0"
+      >
+        <div class="flex items-center gap-4 mt-16">
+          <img src="./assets/images/message 1.svg" alt="" />
+          <input
+            class="outline-none text-sm font-bold text-[#191825BF]"
+            type="text"
+            value="Your Email"
+          />
+        </div>
+        <button
+          class="bg-purple py-6 w-full sm:w-[190px] rounded-3xl text-white mt-[60px] text-base font-medium"
+        >
+          Subscribe
+        </button>
+      </div>
+
+      <img
+        class="absolute right-[0px] top-[4567px] hidden sm:block sm:top-[6626px] sm:h-[287px] h-[315px] md:h-[290px] md:top-[4650px] lg:top-[4559px] lg:h-[308px]"
+        src="./assets/images/OBJECTS.svg"
+        alt="shape"
+      />
+
+      <div class="md:flex md:px-[6%] mb-10">
+        <div class="mt-[95px] md:mt-0 md:w-[40%] lg:w-[50%]">
+          <div class="flex items-center gap-4 mt-16">
+            <img src="./assets/images/Vector.png" alt="logo" />
+            <h2 class="text-2xl font-black">Travlog</h2>
+          </div>
+          <p
+            class="mt-9 text-[#19182580] text-base font-[450] sm:pr-7 lg:pr-[10.75rem]"
+          >
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC.
+          </p>
+          <!-- <img src="./assets/images/OBJECTS.svg" alt="shape" /> -->
+          <div class="flex items-center gap-7 mt-9">
+            <div>
+              <img src="./assets/images/9Vector (1).svg" alt="facebook" />
+            </div>
+            <div class="bg-purple p-2 rounded-full">
+              <img src="./assets/images/11Group.svg" alt="tweeter" />
+            </div>
+            <div class="bg-purple p-2 rounded-full">
+              <img src="./assets/images/10Vector.svg" alt="instagram" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative flex flex-col sm:flex-row sm:justify-center gap-14 mt-16 md:w-[60%] lg:w-[55%] md:gap-0 lg:gap-6"
+        >
+          <div
+            class="flex justify-between items-center sm:flex-col sm:items-start sm:justify-normal w-full"
+          >
+            <h5 class="font-bold text-[23px] text-dark">Company</h5>
+            <div
+              class="group border border-[#292D32] rounded-full w-6 h-6 sm:hidden"
+            >
+              <img
+                class="relative top-[9px] left-[6px] text-[#292D32]"
+                src="./assets/images/12Vector.svg"
+                alt=""
+              />
+              <div
+                class="hidden group-hover:block absolute top-9 left-0 z-10 w-full group-hover:bg-white"
+              >
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">About</p>
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">Career</p>
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">Mobile</p>
+              </div>
+            </div>
+            <div class="hidden sm:block">
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">About</p>
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">Career</p>
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">Mobile</p>
+            </div>
+          </div>
+          <div
+            class="relative flex justify-between items-center sm:flex-col sm:items-start sm:justify-normal w-full"
+          >
+            <h5 class="font-bold text-[23px] text-dark">Contact Us</h5>
+            <div
+              class="group border border-[#292D32] rounded-full w-6 h-6 sm:hidden"
+            >
+              <img
+                class="relative top-[9px] left-[6px] text-[#292D32]"
+                src="./assets/images/12Vector.svg"
+                alt=""
+              />
+              <div
+                class="hidden group-hover:block absolute top-9 left-0 z-10 w-full group-hover:bg-white"
+              >
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                  Why Travlog?
+                </p>
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                  Partner with us
+                </p>
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">FAQ’s</p>
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">Blog</p>
+              </div>
+            </div>
+            <div class="hidden sm:block">
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                Why Travlog?
+              </p>
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                Partner with us
+              </p>
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">FAQ’s</p>
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">Blog</p>
+            </div>
+          </div>
+          <div
+            class="relative flex justify-between items-center sm:flex-col sm:items-start sm:justify-normal w-full"
+          >
+            <h5 class="font-bold text-[23px] text-dark">Meet Us</h5>
+            <div
+              class="group border border-[#292D32] rounded-full w-6 h-6 sm:hidden"
+            >
+              <img
+                class="relative top-[9px] left-[6px] text-[#292D32]"
+                src="./assets/images/12Vector.svg"
+                alt=""
+              />
+              <div
+                class="absolute top-9 left-0 hidden group-hover:block group-hover:bg-white z-10 w-full"
+              >
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                  +00 92 1234 56789
+                </p>
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                  info@travlog.com
+                </p>
+                <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                  205. R Street, New York
+                </p>
+                <p class="font-Inter text-lg text-[#191825BF] mt-1">BD23200</p>
+              </div>
+            </div>
+            <div class="hidden sm:block group-hover:block">
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                +00 92 1234 56789
+              </p>
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                info@travlog.com
+              </p>
+              <p class="font-Inter text-lg text-[#191825BF] mt-8">
+                205. R Street, New York
+              </p>
+              <p class="font-Inter text-lg text-[#191825BF] mt-1">BD23200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js" defer></script>
+  </body>
+</html>

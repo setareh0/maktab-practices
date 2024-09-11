@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7f7f7;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  margin-top: 6%;
+}
+.title {
+  margin-bottom: 15px;
+}
+.title h1 {
+  font-size: 2.5rem;
+}
+.form input {
+  padding: 10px 32px 10px 13px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #cccccc;
+  margin: 20px 20px 0 0;
+}
+.form button {
+  padding: 10px 20px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #3e91cf;
+  color: #fff;
+  cursor: pointer;
+}
+.person-list table {
+  border-collapse: collapse;
+  margin: 40px 0 0;
+}
+.person-list tr {
+  width: 100%;
+}
+.person-list table thead tr,
+.person-list table tbody tr {
+  display: grid;
+  grid-template-columns: repeat(6, 130px);
+  text-align: left;
+  padding: 16px 20px;
+  align-items: baseline;
+}
+.person-list table thead tr {
+  background-color: #3e91cf;
+  color: #fff;
+}
+.person-list table tbody tr {
+  background-color: #ebebeb;
+}
+.person-list table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+.person-list tbody tr td.btn-delete {
+  background-color: red;
+  color: #fff;
+  padding: 8px 20px;
+  width: 65%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.person-list tbody tr td {
+  padding-right: 5px;
+}

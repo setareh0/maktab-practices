@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  </head>
+  <body>
+    <div class="container flex justify-center mt-16 gap-8">
+      <input
+        id="url"
+        class="rounded w-[50%]"
+        type="text"
+        placeholder="enter your url..."
+      />
+      <select class="rounded pointer" name="" id="select-box">
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+      </select>
+      <button class="bg-blue-400 text-white p-2 rounded" id="submit">
+        Submit
+      </button>
+    </div>
+
+    <div class="result flex justify-center gap-8 mt-8">
+      <textarea
+        id="requestBody"
+        placeholder="Enter JSON body..."
+        class="rounded w-[40%] hidden h-[300px]"
+      ></textarea>
+      <textarea id="responseBody" class="rounded w-[40%] h-[300px]"></textarea>
+    </div>
+    <h4 id="statusCode" class="flex justify-center mt-8"></h4>
+
+    <script defer src="main.js"></script>
+  </body>
+</html>

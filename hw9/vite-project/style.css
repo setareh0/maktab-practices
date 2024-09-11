@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Flow+Circular:regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@font-face {
+  font-family: Circular;
+  src: url("./assets/fonts/CircularStd/CircularStd-Book.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/inter/Inter-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
